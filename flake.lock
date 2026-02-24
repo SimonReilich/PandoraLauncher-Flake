@@ -16,9 +16,26 @@
         "type": "github"
       }
     },
+    "repo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771930923,
+        "narHash": "sha256-uuk14UZAbngzZwHNM1RKbKV/slBJTN1SxOvSpBE31eo=",
+        "owner": "Moulberry",
+        "repo": "PandoraLauncher",
+        "rev": "7d69aec340ba5366db22ba2fa0eb3a9459730ec6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Moulberry",
+        "repo": "PandoraLauncher",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "repo": "repo"
       }
     }
   },

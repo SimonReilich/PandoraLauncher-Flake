@@ -46,18 +46,18 @@
               wayland
               libxkbcommon
               pciutils
-              libXrender
-              libXtst
-              libX11
-              libXcursor
-              libXrandr
-              libXext
-              libXxf86vm
-              libXi
-              libXinerama
-              libXcomposite
-              libXdamage
-              libXfixes
+              libxrender
+              libxtst
+              libx11
+              libxcursor
+              libxrandr
+              libxext
+              libxxf86vm
+              libxi
+              libxinerama
+              libxcomposite
+              libxdamage
+              libxfixes
               libxcb
               flac
               freeglut
@@ -74,22 +74,22 @@
 
           pandora-bin = pkgs.rustPlatform.buildRustPackage rec {
             pname = "pandora-launcher-base";
-            version = "3.2.1";
+            version = "4.0.0";
 
             src = pkgs.fetchFromGitHub {
               owner = "Moulberry";
               repo = "PandoraLauncher";
               rev = "v${version}";
-              hash = "sha256-elPKbnnjrNakZhCl34qz7bW5PEkjSKs3v1IaZEVB64w=";
+              hash = "sha256-8RHYbrt1Tu3Kv+0WdfBtCvin9YBkTM2mbCSl539ri7E=";
             };
 
-            cargoHash = "sha256-jxJXEgZbLIcZizokJhaTcEfGt+KHclbQ+uZVdEF+hnQ=";
+            cargoHash = "sha256-FuMR9Dq6Js6xh4lcBcusK8Mb8RxMf5tEC4fJo7cr9iM=";
 
             nativeBuildInputs = with pkgs; [
               pkg-config
               copyDesktopItems
               libxcb
-              libX11
+              libx11
             ];
 
             buildInputs = with pkgs; [
@@ -98,10 +98,10 @@
               libxkbcommon
               libGL
               vulkan-loader
-              libX11
-              libXcursor
-              libXi
-              libXrandr
+              libx11
+              libxcursor
+              libxi
+              libxrandr
               libxcb
               dbus
             ];
